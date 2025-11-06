@@ -202,7 +202,7 @@ img{max-width:100%;display:block;border-radius:12px}
 .room-block{ min-height:100vh; display:flex; align-items:center }
 .room-panel{
   color:#fff; background:#384739; border-radius:24px; padding:42px; margin:0 0 0 0;
-  box-shadow:var(--shadow); transform: translateX(20px); opacity:0; filter:blur(4px);
+  transform: translateX(20px); opacity:0; filter:blur(4px);
   transition: opacity .7s cubic-bezier(.25,.1,.25,1), transform .7s cubic-bezier(.25,.1,.25,1), filter .6s;
 }
 .room-block.active .room-panel{ opacity:1; transform:none; filter:blur(0) }
