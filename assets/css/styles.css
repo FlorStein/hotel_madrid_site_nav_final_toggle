@@ -500,7 +500,7 @@ img{max-width:100%;display:block;border-radius:12px}
 /* ===== Fixed NAV across the site ===== */
 :root{ --nav-h: 72px; }
 .nav{ position: fixed; top: 0; left: 0; right: 0; z-index: 1200; }
-body{ padding-top: var(--nav-h); } /* push content below fixed nav */
+/* body{ padding-top: var(--nav-h); } /* push content below fixed nav */ */
 
 /* Keep mobile panel above fixed nav */
 @media (max-width:900px){
