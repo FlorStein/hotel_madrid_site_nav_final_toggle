@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotel Madrid BA</title>
+  <meta name="description" content="Hotel Madrid BA — habitaciones luminosas en un clásico patio porteño.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header id="top" class="site-header">
+    <nav class="nav">
+      <a href="#top" class="brand">HOTEL MADRID</a>
+      <button class="mnav-toggle" id="mnavToggle" aria-label="Abrir menú" aria-controls="mnavPanel" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="mnavPanel">
+        <a href="#about">Nosotros</a>
+        <a href="#rooms">Habitaciones</a>
+        <a href="#gallery">Galería</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero section" id="hero">
+    <div class="hero-inner container">
+      <h1 class="title fade">Un oasis tranquilo en el corazón de Buenos Aires</h1>
+      <p class="subtitle fade">Patios con galerías, luz natural y verde en cada rincón.</p>
+      <div class="cta-group fade">
+        <a class="btn primary" id="cta-reservar" href="#" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+        <a class="btn outline" href="#rooms">Ver habitaciones</a>
+      </div>
+    </div>
+    <div class="hero-image-mask">
+      <img src="assets/images/hero.jpg" alt="Galería del hotel" loading="eager">
+    </div>
+  </section>
+
+  <!-- Availability bar -->
+  <section id="availability" class="availability">
+    <form id="availability-form" class="availability-bar">
+      <div class="field">
+        <label for="checkin">Check‑in</label>
+        <input id="checkin" name="checkin" type="date" required>
+      </div>
+      <div class="field">
+        <label for="checkout">Check‑out</label>
+        <input id="checkout" name="checkout" type="date" required>
+      </div>
+      <div class="field">
+        <label for="guests">Huéspedes</label>
+        <select id="guests" name="guests" required>
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+          <option value="4+">4+</option>
+        </select>
+      </div>
+      <button class="btn beige" type="submit">Chequear disponibilidad</button>
+    </form>
+  </section>
+
+  <section id="about" class="section container">
+    <div class="grid-2">
+      <div>
+        <h2 class="h2 fade">Sobre nosotros</h2>
+        <p class="fade">Hotel Madrid es un conjunto de departamentos y habitaciones alrededor de un patio típico porteño. Inspirado en la estética mediterránea, combinamos materiales cálidos, plantas y luz natural.</p>
+        <p class="fade">Estamos a pasos de avenidas principales y con excelente conexión a transporte.</p>
+      </div>
+      <div class="card image-card fade">
+        <img src="assets/images/courtyard_1.jpg" alt="Patio con vegetación">
+      </div>
+    </div>
+  </section>
+
+  
+  
+  
+  <section id="rooms" class="section rooms-scroll">
+    <div class="container rooms-grid">
+      <!-- Left: sticky image -->
+      <div class="rooms-left">
+        <div class="rooms-frame">
+          <img id="rooms-photo" src="assets/images/room_1.jpg" alt="Habitación actual">
+        </div>
+      </div>
+
+      <!-- Right: scroll blocks (one per viewport) -->
+      <div class="rooms-right">
+        <section class="room-block" data-photo="assets/images/room_1.jpg" data-title1="Doble" data-title2="Suite">
+          <div class="room-panel"><picture class="mobile-photo"><img src="assets/images/room_1.jpg" alt="" loading="lazy"></picture>
+            <div class="room-title">
+              <div class="heading italic">Doble</div>
+              <div class="heading">Suite</div>
+            </div>
+            <p class="room-meta">2 Huéspedes · 1 Cama King · 22 m²</p>
+            <p class="room-desc">Amplia, luminosa y con acceso a la galería del patio. Ideal para parejas o dos personas.</p>
+            <a class="btn outline wa" href="#">Consultar por WhatsApp</a>
+          </div>
+        </section>
+
+        <section class="room-block" data-photo="assets/images/room_3.jpg" data-title1="Departamento" data-title2="Familiar">
+          <div class="room-panel"><picture class="mobile-photo"><img src="assets/images/room_3.jpg" alt="" loading="lazy"></picture>
+            <div class="room-title">
+              <div class="heading italic">Departamento</div>
+              <div class="heading">Familiar</div>
+            </div>
+            <p class="room-meta">Hasta 3 · Cocina equipada · 32 m²</p>
+            <p class="room-desc">Espacio cómodo con cocina integrada y estar. Perfecto para estadías más largas.</p>
+            <a class="btn outline wa" href="#">Consultar por WhatsApp</a>
+          </div>
+        </section>
+
+        <section class="room-block" data-photo="assets/images/room_2.jpg" data-title1="Estándar" data-title2="Simple">
+          <div class="room-panel"><picture class="mobile-photo"><img src="assets/images/room_2.jpg" alt="" loading="lazy"></picture>
+            <div class="room-title">
+              <div class="heading italic">Estándar</div>
+              <div class="heading">Simple</div>
+            </div>
+            <p class="room-meta">1 Huésped · 1 Cama · 14 m²</p>
+            <p class="room-desc">Funcional y luminosa, con escritorio y ventilación natural.</p>
+            <a class="btn outline wa" href="#">Consultar por WhatsApp</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="gallery" class="section container">
+    <h2 class="h2 center fade">Galería</h2>
+    <div class="masonry">
+      <img class="fade" src="assets/images/gallery_1.jpg" alt="Galería">
+      <img class="fade" src="assets/images/gallery_2.jpg" alt="Patio">
+      <img class="fade" src="assets/images/gallery_3.jpg" alt="Detalles">
+      <img class="fade" src="assets/images/gallery_4.jpg" alt="Plantas">
+      <img class="fade" src="assets/images/gallery_5.jpg" alt="Pasillo">
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container grid-2">
+      <div>
+        <h2 class="h2 fade">Contacto</h2>
+        <p class="fade">Escribinos por WhatsApp para disponibilidad inmediata o completá el formulario y te respondemos a la brevedad.</p>
+        <a class="btn primary fade" id="wa-contact" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <p class="muted">@hotelmadridba</p>
+      </div>
+      <form class="card form fade" action="https://formspree.io/f/xbjvgepq" method="POST">
+        <label>Nombre
+          <input name="name" type="text" required>
+        </label>
+        <label>Email
+          <input name="email" type="email" required>
+        </label>
+        <label>Mensaje
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar</button>
+        <small class="muted">Al enviar aceptás nuestra política de privacidad.</small>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand small">HOTEL MADRID</div>
+        <p class="muted">Buenos Aires, Argentina</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Nosotros</a>
+        <a href="#rooms">Habitaciones</a>
+        <a href="#gallery">Galería</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <div>
+        <a class="btn ghost small" id="footer-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.WHATSAPP_NUMBER = ""; // 👉 Colocar aquí número E.164, ej: "54911XXXXXXXX"
+  </script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
